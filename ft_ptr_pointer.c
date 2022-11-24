@@ -23,9 +23,9 @@ void	ft_putpointer(uintptr_t ptr)
 	else
 	{
 		if (ptr <= 9)
-			ft_putchar_fd((ptr + 48), 1);
+			ft_prt_char(ptr + 48), 1);
 		else
-			ft_putchar_fd((ptr - 10 + 'a'), 1);
+			ft_prt_char((ptr - 10 + 'a'));
 	}
 }
 
